@@ -117,6 +117,15 @@ resource "azurerm_route" "res-7" {
   ]
 }
 
+resource "random_password" "res-20" {
+  length      = 16
+  special     = true
+  min_upper   = 1
+  min_lower   = 1
+  min_numeric = 1
+  min_special = 1
+}
+
 resource "azurerm_linux_virtual_machine" "res-2" {
   admin_username                  = "labsAdmin2023"
   admin_password                  = random_password.res-20.result
