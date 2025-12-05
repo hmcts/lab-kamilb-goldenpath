@@ -1,6 +1,6 @@
 
 locals {
-  prefix      = "${formatdate("YYMMDDhhmm", timestamp())}"
+  prefix      = "kb-${formatdate("YYMMDDhhmm", timestamp())}"
   rg_name     = "labs-rg-${local.prefix}"
   vnet_name   = "labs-vnet-${local.prefix}"
   pip_name    = "labs-ip-${local.prefix}"
