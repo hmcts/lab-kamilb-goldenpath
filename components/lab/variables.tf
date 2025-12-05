@@ -26,7 +26,7 @@ variable "location" {
 }
 
 variable "address_space" {
-  default = "10.10.4.128/25"
+  default = "10.10.7.0/25"
 }
 
 variable "environment" {
